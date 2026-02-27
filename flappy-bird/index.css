@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Warm sunrise palette */
+    --background: 0.96 0.04 85;
+    --foreground: 0.18 0.05 40;
+    --card: 1 0.02 80;
+    --card-foreground: 0.18 0.05 40;
+    --popover: 1 0.02 80;
+    --popover-foreground: 0.18 0.05 40;
+    --primary: 0.68 0.19 48;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.92 0.06 85;
+    --secondary-foreground: 0.22 0.05 40;
+    --muted: 0.94 0.03 80;
+    --muted-foreground: 0.52 0.05 50;
+    --accent: 0.78 0.17 160;
+    --accent-foreground: 0.1 0.05 160;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.88 0.05 75;
+    --input: 0.88 0.05 75;
+    --ring: 0.68 0.19 48;
+    --chart-1: 0.68 0.19 48;
+    --chart-2: 0.72 0.18 155;
+    --chart-3: 0.65 0.22 270;
+    --chart-4: 0.82 0.18 84;
+    --chart-5: 0.75 0.20 30;
+    --sidebar: 0.94 0.04 80;
+    --sidebar-foreground: 0.18 0.05 40;
+    --sidebar-primary: 0.68 0.19 48;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.90 0.06 85;
+    --sidebar-accent-foreground: 0.22 0.05 40;
+    --sidebar-border: 0.88 0.05 75;
+    --sidebar-ring: 0.68 0.19 48;
+
+    /* Game tokens */
+    --game-sky-top: #87CEEB;
+    --game-sky-bottom: #FFD580;
+    --game-pipe-body: #4CAF50;
+    --game-pipe-cap: #2E7D32;
+    --game-bird: #FFD700;
+    --game-ground: #8B6914;
+    --font-display: 'Fredoka One', cursive;
+    --font-body: 'Nunito', sans-serif;
+  }
+
+  .dark {
+    --background: 0.12 0.04 250;
+    --foreground: 0.95 0.02 80;
+    --card: 0.18 0.04 250;
+    --card-foreground: 0.95 0.02 80;
+    --popover: 0.22 0.04 250;
+    --popover-foreground: 0.95 0.02 80;
+    --primary: 0.72 0.20 48;
+    --primary-foreground: 0.10 0.02 50;
+    --secondary: 0.25 0.04 240;
+    --secondary-foreground: 0.95 0.02 80;
+    --muted: 0.25 0.04 240;
+    --muted-foreground: 0.65 0.03 240;
+    --accent: 0.35 0.06 240;
+    --accent-foreground: 0.95 0.02 80;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.205 0 0;
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.72 0.20 48;
+    --chart-1: 0.72 0.20 48;
+    --chart-2: 0.696 0.17 162.48;
+    --chart-3: 0.769 0.188 70.08;
+    --chart-4: 0.627 0.265 303.9;
+    --chart-5: 0.645 0.246 16.439;
+    --sidebar: 0.18 0.04 250;
+    --sidebar-foreground: 0.95 0.02 80;
+    --sidebar-primary: 0.72 0.20 48;
+    --sidebar-primary-foreground: 0.10 0.02 50;
+    --sidebar-accent: 0.25 0.04 240;
+    --sidebar-accent-foreground: 0.95 0.02 80;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.72 0.20 48;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    overflow: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
